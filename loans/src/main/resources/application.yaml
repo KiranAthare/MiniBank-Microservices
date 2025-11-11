@@ -1,0 +1,21 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: loans
+  datasource:
+    url: jdbc:mysql://localhost:3306/accounts?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # use validate/none in production
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
