@@ -12,6 +12,10 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.mvn/wrapper
+.gitattributes
+mvnw
+mvnw.cmd
 
 ### IntelliJ IDEA ###
 .idea
